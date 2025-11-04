@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu PWA</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Manifesto do PWA -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Cor da barra do navegador -->
+  <meta name="theme-color" content="#4CAF50">
+</head>
+<body>
+  <h1>Olá, este é meu primeiro PWA! 🚀</h1>
+  <button id="notify">Testar Notificação</button>
+
+  <script>
+    // Registrar o Service Worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
